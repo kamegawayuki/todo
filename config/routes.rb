@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
 	root 'top#index'
 
-	resources :list, only: %i(new create edit update)
+	resources :list, only: %i(new create edit update destroy)
   # Defines the root path route ("/")
   # root "articles#index"
 	devise_scope :user do
